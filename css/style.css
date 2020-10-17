@@ -1,3 +1,54 @@
+header .navbar {
+  padding: 2rem 0; }
+  header .navbar .logo_block p {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 300; }
+    header .navbar .logo_block p:last-of-type {
+      font-size: 4px;
+      font-weight: 400; }
+  header .navbar .navbar-nav .nav-link {
+    font-family: 'Asap', sans-serif;
+    color: #4d4d4d;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-left: 39px;
+    padding: 8px 0; }
+    header .navbar .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid #4d4d4d; }
 
+.main_bg {
+  background-image: url("../images/bg.jpg");
+  height: 100vh;
+  background-size: cover; }
+  .main_bg h1 {
+    font-family: 'Asap', sans-serif;
+    font-size: 90px;
+    color: #4d4d4d;
+    font-weight: 500;
+    margin: 0; }
+  .main_bg p {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #9a9a9a;
+    margin-bottom: 2rem; }
+  .main_bg a {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    margin-right: 20px;
+    width: 10rem;
+    line-height: 50px;
+    border-radius: 0;
+    border: 1px solid #4d4d4d;
+    background-color: rgba(0, 0, 0, 0); }
+    .main_bg a:hover {
+      background-color: white;
+      -webkit-box-shadow: 10px 20px 40px 8px #C7C7C7;
+      box-shadow: 10px 20px 40px 8px #C7C7C7; }
 
 /*# sourceMappingURL=style.css.map */
