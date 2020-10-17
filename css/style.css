@@ -18,10 +18,29 @@ header .navbar {
     header .navbar .navbar-nav .nav-link:hover {
       border-bottom: 2px solid #4d4d4d; }
 
+.btn-light {
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin-right: 20px;
+  width: 10rem;
+  line-height: 50px;
+  border-radius: 0;
+  border: 1px solid #4d4d4d;
+  background-color: rgba(0, 0, 0, 0); }
+  .btn-light:hover {
+    background-color: white;
+    -webkit-box-shadow: 10px 20px 40px 8px #C7C7C7;
+    box-shadow: 10px 20px 40px 8px #C7C7C7; }
+
 .main_bg {
   background-image: url("../images/bg.jpg");
   height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 80px; }
   .main_bg h1 {
     font-family: 'Asap', sans-serif;
     font-size: 90px;
@@ -34,21 +53,45 @@ header .navbar {
     font-size: 22px;
     color: #9a9a9a;
     margin-bottom: 2rem; }
-  .main_bg a {
+
+.bg_left_block {
+  margin-top: -80px; }
+
+.bg_right_block {
+  max-width: 574px;
+  max-height: 643px;
+  display: inline-block;
+  margin-left: 30px; }
+  .bg_right_block img {
+    display: block;
+    width: 100%; }
+
+.about_me_container {
+  padding: 109px 0 124px; }
+  .about_me_container .about_me_img {
+    max-width: 574px;
+    max-height: 443px;
+    display: inline-block; }
+    .about_me_container .about_me_img img {
+      display: block;
+      width: 100%; }
+  .about_me_container .btn-light {
+    width: 244px; }
+  .about_me_container h2 {
     font-family: 'Asap', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #4d4d4d;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 49px;
+    color: #7b7b7b;
     text-transform: uppercase;
-    margin-right: 20px;
-    width: 10rem;
-    line-height: 50px;
-    border-radius: 0;
-    border: 1px solid #4d4d4d;
-    background-color: rgba(0, 0, 0, 0); }
-    .main_bg a:hover {
-      background-color: white;
-      -webkit-box-shadow: 10px 20px 40px 8px #C7C7C7;
-      box-shadow: 10px 20px 40px 8px #C7C7C7; }
+    letter-spacing: 10px;
+    margin: 0 0 15px; }
+  .about_me_container p {
+    max-width: 470px;
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #4d4d4d;
+    margin: 0 0 40px; }
 
 /*# sourceMappingURL=style.css.map */

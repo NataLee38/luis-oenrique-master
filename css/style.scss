@@ -27,7 +27,8 @@ header {
         text-transform: uppercase;
         margin-left: 39px;
         padding: 8px 0;
-        &:hover{
+
+        &:hover {
           border-bottom: 2px solid $main_color;
         }
       }
@@ -35,40 +36,98 @@ header {
   }
 }
 
+.btn-light {
+  font-family: 'Asap', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: $main_color;
+  text-transform: uppercase;
+  margin-right: 20px;
+  width: 10rem;
+  line-height: 50px;
+  border-radius: 0;
+  border: 1px solid $main_color;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: white;
+    -webkit-box-shadow: 10px 20px 40px 8px #C7C7C7;
+    box-shadow: 10px 20px 40px 8px #C7C7C7;
+  }
+}
+
 .main_bg {
   background-image: url("../images/bg.jpg");
   height: 100vh;
   background-size: cover;
-  h1{
+  overflow: hidden;
+  padding-top: 80px;
+
+  h1 {
     font-family: 'Asap', sans-serif;
     font-size: 90px;
     color: $main_color;
     font-weight: 500;
     margin: 0;
   }
-  p{
+
+  p {
     font-family: 'Asap', sans-serif;
     font-weight: 500;
     font-size: 22px;
     color: #9a9a9a;
     margin-bottom: 2rem;
   }
-  a{
-    font-family: 'Asap', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: $main_color;
-    text-transform: uppercase;
-    margin-right: 20px;
-    width: 10rem;
-    line-height: 50px;
-    border-radius: 0;
-    border: 1px solid $main_color;
-    background-color: rgba(0, 0, 0, 0);
-    &:hover{
-      background-color: white;
-      -webkit-box-shadow: 10px 20px 40px 8px #C7C7C7;
-      box-shadow: 10px 20px 40px 8px #C7C7C7;
+}
+
+.bg_left_block{
+  margin-top: -80px;
+}
+
+.bg_right_block {
+  max-width: 574px;
+  max-height: 643px;
+  display: inline-block;
+  margin-left: 30px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+.about_me_container {
+  padding: 109px 0 124px;
+  .about_me_img {
+    max-width: 574px;
+    max-height: 443px;
+    display: inline-block;
+
+    img {
+      display: block;
+      width: 100%;
     }
+  }
+  .btn-light{
+    width: 244px;
+  }
+  h2{
+    font-family: 'Asap', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 49px;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0 0 15px;
+  }
+  p{
+    max-width: 470px;
+    font-family: 'Asap', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: $main_color;
+    margin: 0 0 40px;
   }
 }
