@@ -124,4 +124,19 @@ header .navbar {
     color: #4d4d4d;
     margin-bottom: 80px; }
 
+.skills {
+  padding: 117px 0 127px; }
+  .skills .header3 {
+    margin-bottom: 62px; }
+    .skills .header3:before {
+      margin: auto;
+      margin-bottom: 19px; }
+  .skills .schedule_img {
+    max-width: 996px;
+    max-height: 415px;
+    display: inline-block; }
+    .skills .schedule_img img {
+      display: block;
+      width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
