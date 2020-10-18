@@ -91,13 +91,22 @@ header {
     color: $main_color;
     font-weight: 500;
     margin: 0;
+
+    @include max-screen(1024px) {
+      font-size: 70px;
+      margin-top: 50px;
+    }
+
+    @include max-screen(992px) {
+      font-size: 50px;
+      margin-top: 50px;
+    }
+
     @include max-screen(767px) {
       font-size: 40px;
       margin-top: 40px;
     }
-    @include max-screen(992px) {
-      margin-top: 50px;
-    }
+
   }
 
   p {
