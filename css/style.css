@@ -59,11 +59,11 @@ header .navbar {
     @media screen and (max-width: 1024px) {
       .main_bg h1 {
         font-size: 70px;
-        margin-top: 50px; } }
+        margin-top: 0; } }
     @media screen and (max-width: 992px) {
       .main_bg h1 {
         font-size: 50px;
-        margin-top: 50px; } }
+        margin-top: 0; } }
     @media screen and (max-width: 767px) {
       .main_bg h1 {
         font-size: 40px;
