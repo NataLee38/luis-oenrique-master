@@ -255,7 +255,7 @@ header {
 
 .owl-dots {
   position: absolute;
-  bottom: 38px;
+  bottom: -30px;
   text-align: center;
   width: 100%;
 }
@@ -384,5 +384,15 @@ footer{
 
 .upper_footer_block{
   border-bottom: 1px solid white;
+}
+
+.lower_footer_block{
+  p{
+    margin: 0;
+    line-height: 83px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
 }
 
