@@ -38,14 +38,16 @@ header {
           border-bottom: 2px solid $main_color;
         }
       }
-      .nav-item{
-        @include max-screen(767px) {
+
+      .nav-item {
+        @include max-screen(991px) {
           background-color: white;
         }
       }
     }
-    .navbar-toggler{
-      &:focus{
+
+    .navbar-toggler {
+      &:focus {
         outline: none;
       }
     }
@@ -110,11 +112,11 @@ header {
 .bg_left_block {
   margin-top: -80px;
   @include max-screen(992px) {
-     margin: 0;
-   }
+    margin: 0;
+  }
 
-  .btn-light{
-    @include max-screen(992px){
+  .btn-light {
+    @include max-screen(992px) {
       width: 50%;
       margin: 0;
       font-size: 15px;
@@ -168,7 +170,7 @@ header {
   }
 }
 
-.about_me_left{
+.about_me_left {
   @include max-screen(767px) {
     padding: 0 15px;
     margin-bottom: 30px;
@@ -576,7 +578,7 @@ footer {
   }
 }
 
-.icons{
+.icons {
   @include max-screen(767px) {
     justify-content: center;
     margin-top: 30px;
