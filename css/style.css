@@ -139,4 +139,20 @@ header .navbar {
       display: block;
       width: 100%; }
 
+.carousel_block {
+  padding: 124px 0 118px; }
+  .carousel_block .header3:before {
+    margin: auto;
+    margin-bottom: 19px; }
+  .carousel_block .carousel_img {
+    width: 161px;
+    height: 161px;
+    display: inline-block; }
+    .carousel_block .carousel_img img {
+      display: block;
+      width: 100%; }
+  .carousel_block .carousel_block__inner {
+    padding: 77px 118px;
+    border: 1px solid black; }
+
 /*# sourceMappingURL=style.css.map */
