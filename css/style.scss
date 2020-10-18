@@ -201,6 +201,7 @@ header {
 .carousel_block{
   padding: 124px 0 118px;
   .header3{
+    margin-bottom: 56px;
     &:before{
       margin: auto;
       margin-bottom: 19px;
@@ -218,5 +219,48 @@ header {
   .carousel_block__inner{
     padding: 77px 118px;
     border: 1px solid $black_color;
+    h4{
+      color: #212121;
+      font-family: 'Asap', sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .position{
+      color: #212121;
+      font-family: 'Asap', sans-serif;
+      font-style: italic;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .description{
+      text-transform: uppercase;
+      font-family: 'Asap', sans-serif;
+      color: #212121;
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.owl-dot span {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.owl-dot.active span {
+  background-color: black;
 }
