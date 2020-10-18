@@ -341,6 +341,7 @@ footer {
   background-image: url("../images/bg_footer.jpg");
   background-size: cover;
   padding-top: 142px;
+  position: relative;
 
   .header3 {
     color: white;
@@ -380,6 +381,11 @@ footer {
     background-color: white;
     margin-bottom: 57px;
 
+    &:hover {
+      -webkit-box-shadow: 10px 20px 40px 8px #383838;
+      box-shadow: 10px 20px 40px 8px #383838;
+    }
+
     span {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -391,6 +397,37 @@ footer {
 
 .upper_footer_block {
   border-bottom: 1px solid white;
+
+  .anchor {
+    position: absolute;
+    right: 0;
+    bottom: 192px;
+    height: 40px;
+    width: 45px;
+    color: $main_color;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    animation: anchor 0.5s ease-out infinite alternate;
+
+    &:hover {
+      animation-play-state: paused;
+      text-decoration: none;
+    }
+  }
+}
+
+@keyframes anchor {
+  0% {
+    bottom: 192px;
+    -webkit-box-shadow: 0 10px 24px 10px #636363;
+    box-shadow: 0 10px 24px 10px #636363;
+  }
+  100% {
+    bottom: 232px;
+    box-shadow: 0 10px 24px 10px rgba(0, 0, 0, 0);
+  }
 }
 
 .lower_footer_block {
@@ -411,33 +448,39 @@ footer {
   display: inline-block;
   text-align: center;
   color: $main_color;
-  &:hover{
-    &:first-of-type{
+
+  &:hover {
+    &:first-of-type {
       background-color: #4867AA;
       color: white;
       text-decoration: none;
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       background-color: #0084b4;
       color: white;
       text-decoration: none;
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       background-color: #0A66C2;
       color: white;
       text-decoration: none;
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
       background-color: #34A853;
       color: white;
       text-decoration: none;
     }
-    &:nth-child(5){
+
+    &:nth-child(5) {
       background-color: #0054F7;
       color: white;
       text-decoration: none;
     }
-    &:last-of-type{
+
+    &:last-of-type {
       background-color: #E14A84;
       color: white;
       text-decoration: none;

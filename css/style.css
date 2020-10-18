@@ -237,7 +237,8 @@ header .navbar {
 footer {
   background-image: url("../images/bg_footer.jpg");
   background-size: cover;
-  padding-top: 142px; }
+  padding-top: 142px;
+  position: relative; }
   footer .header3 {
     color: white;
     margin-bottom: 67px; }
@@ -263,6 +264,9 @@ footer {
   footer .btn-light {
     background-color: white;
     margin-bottom: 57px; }
+    footer .btn-light:hover {
+      -webkit-box-shadow: 10px 20px 40px 8px #383838;
+      box-shadow: 10px 20px 40px 8px #383838; }
     footer .btn-light span {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -271,7 +275,30 @@ footer {
 
 .upper_footer_block {
   border-bottom: 1px solid white; }
+  .upper_footer_block .anchor {
+    position: absolute;
+    right: 0;
+    bottom: 192px;
+    height: 40px;
+    width: 45px;
+    color: #4d4d4d;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    animation: anchor 0.5s ease-out infinite alternate; }
+    .upper_footer_block .anchor:hover {
+      animation-play-state: paused;
+      text-decoration: none; }
 
+@keyframes anchor {
+  0% {
+    bottom: 192px;
+    -webkit-box-shadow: 0 10px 24px 10px #636363;
+    box-shadow: 0 10px 24px 10px #636363; }
+  100% {
+    bottom: 232px;
+    box-shadow: 0 10px 24px 10px rgba(0, 0, 0, 0); } }
 .lower_footer_block p {
   margin: 0;
   line-height: 83px;
