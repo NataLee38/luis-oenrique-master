@@ -264,3 +264,24 @@ header {
 .owl-dot.active span {
   background-color: black;
 }
+
+.stats{
+  background-color: #f6f6f6;
+  padding: 50px 0 62px;
+  margin-bottom: 154px;
+  .num{
+    color: #212121;
+    font-size: 30px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+  }
+  .definition{
+    color: #212121;
+    font-size: 22px;
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
