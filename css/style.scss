@@ -1,3 +1,9 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 $black_color: black;
 $main_color: #4d4d4d;
 
@@ -32,6 +38,16 @@ header {
           border-bottom: 2px solid $main_color;
         }
       }
+      .nav-item{
+        @include max-screen(767px) {
+          background-color: white;
+        }
+      }
+    }
+    .navbar-toggler{
+      &:focus{
+        outline: none;
+      }
     }
   }
 }
@@ -62,6 +78,7 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 80px;
+  position: relative;
 
   h1 {
     font-family: 'Asap', sans-serif;
@@ -69,6 +86,13 @@ header {
     color: $main_color;
     font-weight: 500;
     margin: 0;
+    @include max-screen(767px) {
+      font-size: 40px;
+      margin-top: 40px;
+    }
+    @include max-screen(992px) {
+      margin-top: 50px;
+    }
   }
 
   p {
@@ -82,12 +106,27 @@ header {
 
 .bg_left_block {
   margin-top: -80px;
+  @include max-screen(992px) {
+     margin: 0;
+   }
+
+  .btn-light{
+    @include max-screen(992px){
+      width: 50%;
+      margin: 0;
+      font-size: 15px;
+    }
+  }
 }
+
 
 .bg_right_block {
   max-width: 574px;
   display: inline-block;
   margin-left: 30px;
+  @include max-screen(767px) {
+    margin: 30px 0 0;
+  }
 
   img {
     display: block;
@@ -132,6 +171,10 @@ header {
   text-transform: uppercase;
   letter-spacing: 10px;
   margin: 0 0 15px;
+  @include max-screen(767px) {
+    font-size: 25px;
+    line-height: 32px;
+  }
 
   &:before {
     height: 4px;
