@@ -64,6 +64,9 @@ header {
   border-radius: 0;
   border: 1px solid $main_color;
   background-color: rgba(0, 0, 0, 0);
+  @include max-screen(767px) {
+    margin: 0;
+  }
 
   &:hover {
     background-color: white;
@@ -137,6 +140,9 @@ header {
 
 .about_me_container {
   padding: 109px 0 124px;
+  @include max-screen(767px) {
+    padding: 109px 0 50px;
+  }
 
   .about_me_img {
     max-width: 574px;
@@ -162,6 +168,14 @@ header {
   }
 }
 
+.about_me_left{
+  @include max-screen(767px) {
+    padding: 0 15px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
 .header3 {
   font-family: 'Asap', sans-serif;
   font-size: 46px;
@@ -183,6 +197,10 @@ header {
     content: "";
     display: block;
     margin-bottom: 19px;
+    @include max-screen(767px) {
+      margin: auto;
+      margin-bottom: 19px;
+    }
   }
 }
 
@@ -256,8 +274,11 @@ header {
 
   .carousel_img {
     width: 161px;
-    height: 161px;
     display: inline-block;
+    @include max-screen(767px) {
+      margin: auto;
+      margin-bottom: 30px;
+    }
 
     img {
       display: block;
@@ -268,6 +289,17 @@ header {
   .carousel_block__inner {
     padding: 77px 118px;
     border: 1px solid $black_color;
+    @include max-screen(1024px) {
+      padding: 70px 95px;
+    }
+    @include max-screen(992px) {
+      padding: 30px;
+      text-align: center;
+    }
+    @include max-screen(767px) {
+      padding: 30px 15px;
+      text-align: center;
+    }
 
     h4 {
       color: #212121;
@@ -276,6 +308,9 @@ header {
       font-size: 30px;
       text-transform: uppercase;
       margin-bottom: 0;
+      @include max-screen(992px) {
+        font-size: 20px;
+      }
     }
 
     .position {
@@ -292,6 +327,10 @@ header {
       color: #212121;
       font-size: 16px;
       line-height: 26px;
+      @include max-screen(992px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 }
@@ -301,6 +340,9 @@ header {
   bottom: -30px;
   text-align: center;
   width: 100%;
+  @include max-screen(767px) {
+    bottom: -10px;
+  }
 }
 
 .owl-dot span {
@@ -480,6 +522,9 @@ footer {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    @include max-screen(992px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -528,6 +573,13 @@ footer {
       color: white;
       text-decoration: none;
     }
+  }
+}
+
+.icons{
+  @include max-screen(767px) {
+    justify-content: center;
+    margin-top: 30px;
   }
 }
 
