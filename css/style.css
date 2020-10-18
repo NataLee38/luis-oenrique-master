@@ -234,4 +234,41 @@ header .navbar {
     .portfolio .btn-light:focus {
       background-color: inherit; }
 
+footer {
+  background-image: url("../images/bg_footer.jpg");
+  background-size: cover;
+  padding-top: 142px; }
+  footer .header3 {
+    color: white; }
+    footer .header3:before {
+      margin: auto;
+      margin-bottom: 19px;
+      background-color: white; }
+  footer .form-group {
+    margin-bottom: 0; }
+  footer input.form-control {
+    height: 57px; }
+  footer .form-control {
+    border-radius: 0;
+    border: none;
+    resize: none;
+    margin-bottom: 30px;
+    font-family: 'Asap', sans-serif;
+    color: #212121;
+    font-size: 16px;
+    line-height: 57px; }
+  footer textarea.form-control {
+    height: 208px; }
+  footer .btn-light {
+    background-color: white;
+    margin-bottom: 57px; }
+    footer .btn-light span {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 16px;
+      color: #4d4d4d; }
+
+.upper_footer_block {
+  border-bottom: 1px solid white; }
+
 /*# sourceMappingURL=style.css.map */
